@@ -1,0 +1,28 @@
+
+#include <Servo.h>
+
+Servo servo01;
+Servo servo02;
+
+int angle = 0;
+
+
+void setup() {
+  servo01.attach(3) ;
+  servo02.attach(5) ;
+ }
+
+void loop() {
+  
+  angle = random (0, 360);    
+  {                                  
+    servo01.write(angle);                                       
+  } 
+
+ angle = random (70, 110);    
+  {                                  
+    servo02.write(angle);                                       
+  } 
+ 
+
+}
